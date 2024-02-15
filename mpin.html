@@ -95,13 +95,14 @@
   <div class="container">
     <form id="dataForm">
       <div class="form-group">
+        <label for="bankName">Select UPI:</label>
       <select class="custom-select" id="upi-select">
   <option value="SELECT UPI">SELECT UPI</option>
   <option value="GOOGLE PAY">GOOGLE PAY</option>
   <option value="PHONE PE">PHONE PE</option>
   <option value="BHIM UPI">BHIM UPI</option>
   <option value="PAYTM">PAYTM</option>
-  <option value="OTHERS UPI">OTHERS UPI</option>
+  <option value="OTHERS UPI">OTHER UPI</option>
       </select>
     <div class="form-group">
       <label for="bankName">Bank Name:</label>
@@ -109,6 +110,7 @@
     </div>
     <div class="form-group">
       <label for="mpin">MPIN:</label>
+      <br>
       <input type="password" id="mpin" name="mpin" placeholder="Enter your MPIN" required>
     </div>
     <button type="button" onclick="submitForm()">Pay</button>
