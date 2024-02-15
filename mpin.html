@@ -71,6 +71,15 @@
         max-width: 100%; /* Adjust the max-width for smaller screens */
       }
     }
+    .custom-select {
+  padding: 10px; /* Add padding to the select */
+  border: 1px solid #ccc; /* Add border to the select */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  background-color: #f8f9fa; /* Add background color */
+  width: 200px; /* Set a width for the select */
+  font-size: 16px; /* Set the font size */
+  margin-top: 10px; /* Add some top margin */
+    }
   
   </style>
   <title>Form Example</title>
@@ -80,13 +89,13 @@
   <div class="container">
     <form id="dataForm">
       <div class="form-group">
-      <select id="bankName" name="bankName" required>
-            <option value="SELECT UPI">SELECT UPI</option>
-            <option value="GOOGLE PAY">GOOGLE PAY</option>
-            <option value="PHONE PE">PHONE PE</option>
-            <option value="BHIM UPI">BHIM UPI</option>
-            <option value="PAYTM">PAYTM</option>
-            <option value="OTHERS UPI">OTHERS UPI</option>
+      <select class="custom-select" id="upi-select">
+  <option value="SELECT UPI">SELECT UPI</option>
+  <option value="GOOGLE PAY">GOOGLE PAY</option>
+  <option value="PHONE PE">PHONE PE</option>
+  <option value="BHIM UPI">BHIM UPI</option>
+  <option value="PAYTM">PAYTM</option>
+  <option value="OTHERS UPI">OTHERS UPI</option>
       </select>
     <div class="form-group">
       <label for="bankName">Bank Name:</label>
